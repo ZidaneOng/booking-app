@@ -1,13 +1,13 @@
-export default function Calculator(num: number[]) {
-  return num.reduce( (acc, n) => acc + n, 0 )
-  /*
-  let result = 0
-  num.map((n) => {
-    result = result + n
-    return n  
-  })
+export function addition(num: number[]) {
+  return num.reduce( (acc, n) => acc + n, 0 )}
 
+export function subtraction(num: number[]) {
+  num.sort(function(a, b){return b - a}).map
+  return num.reduce( (acc, n) => acc - n)}
 
-  return result
-  */
-}
+export function multiplication(num: number[]) {
+  return num.reduce( (acc, n) => acc * n)}
+
+export function division(num: number[]) {
+    num.sort(function(a, b){return b - a}).map
+    return num.reduce( (acc, n) => acc / n)}
